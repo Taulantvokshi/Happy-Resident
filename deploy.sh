@@ -15,7 +15,7 @@ npm install
 pm2 start all
 ENDSSH 
 
-ssh root@ 165.227.82.241  << 'ENDSSH'
+ssh root@165.227.82.241  << 'ENDSSH'
 setsebool -P httpd_can_network_connect on
 setsebool -P httpd_enable_homedirs on
 chcon -Rt httpd_sys_content_t /home/taulantvokshi/happyResident/public

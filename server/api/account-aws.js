@@ -5,7 +5,7 @@ const multerS3 = require('multer-s3')
 aws.config.update({
   secretAccessKey: process.env.SecretAccessKey,
   accessKeyId: process.env.AccessKeyId,
-  region: 'us-east-1'
+  region: 'us-east-1',
 })
 
 const s3 = new aws.S3()
@@ -28,7 +28,7 @@ const upload = multer({
   fileFilter,
   limits: {
     files: 1, // allow only 1 file per request
-    fileSize: 1024 * 1024 * 10 // 10 MB (max file size)
+    fileSize: 1024 * 1024 * 10, // 10 MB (max file size)
   },
 
   storage: multerS3({
@@ -37,13 +37,13 @@ const upload = multer({
     acl: 'public-read',
     //contentType: multerS3.AUTO_CONTENT_TYPE,
 
-    metadata: function(req, file, cb) {
+    metadata: function (req, file, cb) {
       cb(null, {fieldName: file.fieldname})
     },
-    key: function(req, file, cb) {
+    key: function (req, file, cb) {
       cb(null, Date.now().toString())
-    }
-  })
+    },
+  }),
 })
 
 module.exports = upload
