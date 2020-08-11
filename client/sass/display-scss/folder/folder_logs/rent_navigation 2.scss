@@ -1,0 +1,18 @@
+.rentNavigation {
+  width: 40%;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+}
+
+.rent-nav-text {
+  color: var(--color-grey-dark-2);
+  font-size: 0.8rem;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

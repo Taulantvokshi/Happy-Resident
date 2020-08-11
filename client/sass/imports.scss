@@ -1,0 +1,50 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import 'base';
+@import 'mixin';
+
+//FrontPage
+@import 'front_page/container';
+@import 'front_page/dashboard';
+
+//Sidebar
+@import 'sidebar-sass/container';
+
+//Infobar
+@import 'infobar-sass/container';
+
+//Toolbar
+@import 'toolbar-sass/container';
+@import 'toolbar-sass/search';
+
+//Display
+@import 'display-scss/container';
+//Display/maintenance
+@import 'display-scss/maintenance/maintenance_container';
+@import 'display-scss/maintenance/maintenance_form';
+@import 'display-scss/maintenance/maintenance_box';
+//Display/account
+@import 'display-scss/account/account_container.scss';
+@import 'display-scss/account/account_services.scss';
+@import 'display-scss/account/account_modal.scss';
+//Display/account/account/forms
+@import 'display-scss/account/forms/change_password.scss';
+@import 'display-scss/account/forms/add_phone.scss';
+@import 'display-scss/account/forms/other_info.scss';
+@import 'display-scss/account/forms/request.scss';
+@import 'display-scss/account/forms/delete.scss';
+//Display/folder
+@import 'display-scss/folder/folder_container';
+@import 'display-scss/folder/folder_options';
+//Display/folder/folder_logs
+@import 'display-scss/folder/folder_logs/rent_log';
+@import 'display-scss/folder/folder_logs/service_log';
+@import 'display-scss/folder/folder_logs/rent_navigation';
+
+//Display/payments
+@import 'display-scss/payments/payments_container';
+//@import 'display-scss/loging';
+@import 'display-scss/loging';
+@import 'display-scss/signup';

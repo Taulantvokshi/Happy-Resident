@@ -1,0 +1,43 @@
+.sidebar {
+  background-color: white;
+  grid-row: 2 / full-end;
+  grid-column: page-start / midd-start 1;
+
+  width: 100%;
+  height: 100%;
+
+  &_navigation {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--color-grey-light-3);
+    border-right: 1px solid var(--color-grey-light-3);
+
+    &-icons {
+      text-align: center;
+      margin-top: 3rem;
+      transition: 0.5s all;
+
+      &--calendar,
+      &--user,
+      &--card,
+      &--home,
+      &--folder,
+      &--wrench {
+        width: 4rem;
+        margin-bottom: 3rem;
+
+        cursor: pointer;
+        &:hover {
+          border-right: 3px solid var(--color-primary);
+          background-color: var(--color-primary-light);
+        }
+        &:active {
+          background-color: var(--color-primary-light);
+          & > * {
+            fill: var(--color-grey-dark-2);
+          }
+        }
+      }
+    }
+  }
+}

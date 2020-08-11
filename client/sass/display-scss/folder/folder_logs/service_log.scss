@@ -1,0 +1,33 @@
+.singleServiceLog {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  width: 60%;
+  height: 6rem;
+  background-color: white;
+  //box-shadow: 0px 0px 12px -3px rgba(158,153,158,1);
+  border: 1px solid var(--color-grey-light-4);
+
+  &_date {
+    width: 17rem;
+  }
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      color: var(--color-grey-dark-2);
+    }
+  }
+}
+
+#cancel-icon {
+  color: #4dd599;
+  cursor: pointer;
+  //visibility: visible
+}

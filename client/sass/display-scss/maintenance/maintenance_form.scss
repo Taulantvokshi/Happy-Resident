@@ -1,0 +1,134 @@
+.maintenance_nav {
+  width: 50rem;
+  height: 46rem;
+  // background-color: rebeccapurple;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &_description {
+    height: 5rem;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    &-icon {
+      position: absolute;
+
+      right: 0;
+      cursor: pointer;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 100%;
+      transition: all 0.6s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      &:hover {
+        background-color: #f3826f;
+        & > * {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  &_form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    &-input {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background-color: var(white);
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 7px;
+      width: 100%;
+      transition: all 0.6s;
+      height: 4rem;
+      font-size: 1.5rem;
+      &:disabled {
+        box-shadow: 0px 0px 6px 1px rgba(39, 128, 196, 0.62);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 6px 1px rgba(113, 137, 191, 1);
+      }
+
+      &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--color-grey-light-4);
+      }
+    }
+    &-textArea {
+      resize: none;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background-color: var(white);
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 7px;
+      width: 100%;
+      transition: all 0.6s;
+      font-size: 1.5rem;
+
+      &:focus {
+        outline: none;
+
+        box-shadow: 0px 0px 6px 1px rgba(39, 128, 196, 0.62);
+      }
+      &::-webkit-input-placeholder {
+        font-weight: 100;
+        color: var(--color-grey-light-4);
+      }
+    }
+    &-button {
+      width: 24rem;
+      margin-top: 1rem;
+      height: 3.5rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      background-color: rgba(39, 128, 196, 0.62);
+      color: white;
+      font-size: 1.3rem;
+      font-family: inherit;
+      font-weight: bold;
+
+      &:focus {
+        display: none;
+      }
+    }
+  }
+}
+
+.date-div {
+  width: 50%;
+}
+
+//Check this later
+.sna {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.4);
+  z-index: 10000;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

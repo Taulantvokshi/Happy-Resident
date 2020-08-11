@@ -1,0 +1,7 @@
+.display {
+  grid-row: 3 / full-end;
+  grid-column: midd-start 1 / page-end;
+  background-color: var(--color-display);
+  padding: 1rem;
+  position: relative;
+}

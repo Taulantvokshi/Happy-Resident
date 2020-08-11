@@ -1,0 +1,13 @@
+.dashboard {
+  grid-column: center-start / center-end;
+  grid-row: top-center/top-end;
+  background-color: var(--color-primary-light);
+
+  display: grid;
+  grid-template-rows:
+    [full-start]min-content[middle-end] min-content repeat(3, 1fr)
+    [full-end];
+  grid-template-columns:
+    [page-start]min-content repeat(7, [midd-start] 1fr [midd-end])
+    [page-end];
+}

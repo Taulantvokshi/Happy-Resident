@@ -1,0 +1,23 @@
+.accountPhone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  &_form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &-div {
+      width: 100% margin-right 3rem;
+    }
+
+    &-button {
+      width: 13rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

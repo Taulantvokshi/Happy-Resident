@@ -1,0 +1,125 @@
+//Colors
+:root {
+  --color-display: #f6f7f8;
+  --color-primary: #7189bf;
+
+  //--color-primary: #eb2f64;
+  --color-primary-light: #f3f9fb;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+
+  //signal colors
+  --color-success: #c2e8ce;
+  --color-warning: #f4d143;
+  --color-error: #f6ad7b;
+}
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  //background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--color-grey-dark-2);
+}
+
+.empty_space {
+  border-right: 1px solid var(--color-grey-light-3);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.float-x {
+  position: absolute;
+  right: 5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100%;
+  transition: all 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  &:hover {
+    background-color: #f3826f;
+    & > * {
+      fill: white;
+    }
+  }
+}
+
+.accountNewBtn,
+.accountOldBtn {
+  width: 9rem;
+  height: 3.5rem;
+  background-color: var(--color-success);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: var(--color-grey-dark-2);
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+.full-screen {
+  color: var(--color-grey-dark-2);
+}
+.delay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

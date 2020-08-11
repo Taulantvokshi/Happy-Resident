@@ -1,0 +1,80 @@
+.account {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.8rem;
+  &_settings {
+    box-shadow: 0px 0px 60px -42px rgba(156, 154, 156, 1);
+    margin-top: 1rem;
+    width: 65%;
+    height: 90%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 2rem;
+
+    &_profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+
+      &-imageBox {
+        margin-top: 2rem;
+        width: 6rem;
+        height: 6rem;
+        position: relative;
+        @include flexCenter;
+
+        &--image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          border: 2px solid white;
+          object-fit: cover;
+          box-shadow: 0px 0px 2px 0px rgba(115, 110, 115, 1);
+        }
+        &--addImage {
+          transition: all 0.4s;
+          width: 1.8rem;
+          height: 1.8rem;
+          background-color: white;
+          border-radius: 100%;
+          @include flexCenter;
+
+          position: absolute;
+          right: 0.2rem;
+          bottom: 0;
+          color: var(--color-primary);
+          font-size: 1.5rem;
+          box-shadow: 0px 0px 4px 1px rgba(110, 108, 110, 1);
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.2);
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      &-info {
+        @include flexCenter;
+        margin-top: 1rem;
+
+        &--name {
+          font-size: 1.5rem;
+          //font-family: 'Roboto', sans-serif;
+          color: inherit;
+        }
+      }
+
+      &--services {
+        padding: 1rem;
+        width: 89%;
+      }
+    }
+  }
+}

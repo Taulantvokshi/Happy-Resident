@@ -1,0 +1,114 @@
+.login_display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 15px -4px rgba(179, 179, 179, 1);
+
+  &_container {
+    position: relative;
+    width: 33rem;
+    height: 35rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &-form {
+      height: 30rem;
+      width: 90%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & > * {
+        width: 90%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.form-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: var(--color-grey-light-2);
+  border: none;
+  border-bottom: 2px solid white;
+  border-left: 2px solid var(--color-primary);
+  padding: 0.7rem 2rem;
+
+  width: 100%;
+  transition: all 0.2s;
+  height: 5rem;
+  font-size: 2.2rem;
+
+  &:focus {
+    outline: none;
+    width: 100%;
+    background-color: var(--color-grey-light-2);
+    border-bottom: 2px solid var(--color-primary);
+    border-left: 2px solid white;
+  }
+
+  &::-webkit-input-placeholder {
+    font-weight: 100;
+    color: var(--color-grey-light-4);
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-2);
+  }
+  &--button {
+    border-radius: 4px;
+    margin-top: 2rem;
+    border: none;
+    width: 20rem;
+    background-color: var(--color-primary);
+    height: 5rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+      backface-visibility: hidden;
+    }
+    &:focus {
+      outline: none;
+      transform: scale(1);
+    }
+  }
+}
+
+.testing {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  & > * {
+    font-size: 1.1rem;
+  }
+}
+
+#guest {
+  padding: 0.2rem;
+  width: 8rem;
+  height: 2.3rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-grey-light-2);
+  }
+}

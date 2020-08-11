@@ -1,0 +1,17 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  //background-color: var(--color-primary);
+  display: grid;
+
+  grid-template-rows:
+    minmax(10px, 1fr) [top-center]repeat(6, minmax(min-content, 120px))
+    [top-end] minmax(10px, 1fr);
+
+  grid-template-columns:
+    [full-start]minmax(10px, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 140px) [col-end]
+    )
+    [center-end] minmax(10px, 1fr) [full-end];
+}

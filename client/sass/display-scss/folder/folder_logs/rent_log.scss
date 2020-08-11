@@ -1,0 +1,39 @@
+.singleRentLog {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.6rem;
+  border-bottom: 2px solid var(--color-grey-light-4);
+
+  &_month,
+  &_date,
+  &_late,
+  &_amount {
+    //background-color: rebeccapurple;
+    width: 12rem;
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      color: var(--color-grey-dark-3);
+    }
+  }
+
+  &_late {
+    border-bottom: 2px solid #f45905;
+  }
+
+  &_month {
+    border-bottom: 2px solid #4dd599;
+    margin-left: -0.6rem;
+  }
+}
+
+// --color-success: #c2e8ce;
+// --color-warning: #f4d143;
+// --color-error: #f6ad7b;
