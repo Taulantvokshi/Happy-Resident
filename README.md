@@ -15,4 +15,6 @@ like reporting maintenance problems, paying the rent, check their rent status th
 Technologies used:
 Backend: NodeJS, Nginx, DigitalOchean, Bash, Sequelize, Postgres AWS and Stripe
 Frontend: Javascript, React, Redux, Sass, Html
+
+
 Website : https://happy-resident.taulantvokshi.com
